@@ -1,0 +1,147 @@
+html,body{
+    height: 100%;
+    background: #0d1a2d;
+    color: #4f5063;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #15273f;
+    width: 320px;
+    border-radius: 12px;
+}
+.top-active {
+    position: absolute;
+    background: rgba(0, 255, 247, 0.5);
+    width: 270px;
+    height: 270px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 5px;
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.top-active:hover{
+    opacity: 1;
+}
+.top-active img {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+.top {
+    padding-top: 25px;
+    margin-left: 25px;
+    position: relative;
+}
+.top img {
+    width: 270px;
+    height: 270px;
+    max-width: 100%;
+    border-radius: 5px;
+    z-index: 53;
+}
+
+.title {
+    padding-top: 13px;
+    padding-left: 25px;
+}
+.title a {
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+.title a:hover{
+    color: #42c7ce;
+}
+.text{
+    color: #8da1c2;
+    padding-left: 25px;
+    padding-top: 13px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 100;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-left: 5px;
+}
+.crystal {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 120px;
+    align-items: center;
+    margin-left: 10px;
+}
+.crystal p{
+    padding-left: 7px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 500;
+    font-size: 14px;
+}
+.time {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 120px;
+    align-items: center;
+    padding-left: 30px;
+}
+.time p {
+    padding-left: 7px;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.footer {
+    width: 270px;
+    border-top: 1px solid #293b53;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    margin-left: 25px;
+    font-size: 13px;
+    padding-bottom: 25px;
+}
+.footer img {
+    max-width: 100%;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.footer p {
+    padding-left: 10px;
+    color: hsl(215, 51%, 70%);
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+.footer a:hover{
+    color: #42c7ce;
+}
